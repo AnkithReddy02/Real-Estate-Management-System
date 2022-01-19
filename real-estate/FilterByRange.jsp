@@ -140,7 +140,7 @@
 								else
 								{
 									out.println("<br><br><h4>"+"Results for \'Rent\' between "+ (String)request.getParameter("Minimum") + "/- and " + (String)request.getParameter("Maximum") +"/-</h4>");
-									query = "select house_id,agent_name,agents.contact_number,city,street_name,apt_no,rent_price,no_bedrooms,specificatons from house natural join agents where (rent_status = \'N\')  and rent_price between ? and ?";
+									query = "select house_id,agent_name,agents.contact_number,city,street_name,apt_no,rent_price,no_bedrooms,specificatons from house natural join agents where (rent_status = \'N\') and (sale_status != \'Y\')  and rent_price between ? and ?";
 
 									stmt = conn.prepareStatement(query);
 
