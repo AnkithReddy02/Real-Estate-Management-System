@@ -70,7 +70,7 @@
 
 								if(type.equals("sale"))
 								{
-									query = "update house set sale_status = \'Y\',rent_status = null where sale_status is not null and sale_status <> \'Y\' and (rent_status is null or  rent_status = \'N\') and house_id = ?";
+									query = "update house set sale_status = \'Y\',rent_status = null where sale_status is not null and sale_status <> \'Y\' and (rent_status is null or  rent_status = \'N\') and agent_id = agentId and house_id = ?";
 
 									insertpurchase = "insert into purchase values(null,?,?,?,?)";
 
@@ -90,7 +90,7 @@
 								}
 								else
 								{
-									query = "update house set rent_status = \'Y\' where (sale_status is null or sale_status = \'N\') and (rent_status is not null and  rent_status = \'N\') and house_id = ?";
+									query = "update house set rent_status = \'Y\' where (sale_status is null or sale_status = \'N\') and (rent_status is not null and  rent_status = \'N\') and agent_id = agentId and  house_id = ?";
 
 									insertpurchase = "insert into purchase values(null,?,?,?,?)";
 
