@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#Navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#Navbar::before{
+    content: "";
+    background-color: rgb(165, 151, 151);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#logo{
+    margin: 5px 7px;
+    color:white;
+    border-radius:2px;
+}
+
+#logo img{
+    height: 60px;
+    background-color: white;
+    border-radius: 20px;
+    align-items: left;
+    margin-right:1em;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+#real{	
+    display: flex;
+    flex-direction: column;
+    padding:3px 250px;
+    height: 514px;
+    justify-content: center;
+    align-items: center;		  
+    
+}
+#real::before{
+ content: "";
+ position: absolute;
+ background-color: rgb(201, 15, 15);
+ width: 100%;
+ height: 118%;
+ bottom: 10px;
+ left:0px;
+ top:2px;
+ z-index: -1;
+ opacity: 2.5;
+ margin-bottom: 5px;
+ background: url('../real-estate/real-estate.jpeg')  no-repeat center center/cover;
+}
+h2{
+    color:rgb(245, 236, 236);
+}
+#Buyer::before{
+content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ bottom:0px;
+ left:0px;
+ top:2px;
+ z-index: -1;
+ opacity: 2.5;
+ margin-bottom: 5px;
+ background: url('../real-estate/BuyerLog.webp');
+}
+#Buyer-Reg{
+    display:flex;
+}
+#Buyer-Reg::before{
+    content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     bottom:0px;
+     left:0px;
+     top:2px;
+     z-index: -1;
+     opacity: 1.5;
+     background: url('../real-estate/Images/buy.jpg');
+    
+}
+#Buyer-Reg h3{
+    color:white;
+}
+
+#Login::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom:10px;
+    left:0px;
+    top:2px;
+    z-index: -1;
+    opacity: 2.5;
+    background: url('../real-estate/Images/Buyer-Exi.jpg')  no-repeat center center/cover;
+   }
+   
+   footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+.center{
+    text-align: center;
+}
+#Agent h3{
+    font-size: 2.3em;
+}
+#Agent::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom:10px;
+    left:0px;
+    top:2px;
+    z-index: -1;
+    opacity: 2.5;
+    margin-bottom: 5px;
+    background: url('../real-estate/Images/Agent.jpg');
+
+}
+#seller::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom:10px;
+    left:0px;
+    top:2px;
+    z-index: -1;
+    opacity: 2.5;
+    margin-bottom: 5px;
+    background: url('../real-estate/Images/seller.jpg');
+
+}
+#seller-reg::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom:10px;
+    left:0px;
+    top:2px;
+    z-index: -1;
+    opacity: 2.5;
+    margin-bottom: 5px;
+    background: url('../real-estate/Images/seller-exi.jpg');
+
+}
+#seller-log::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom:10px;
+    left:0px;
+    top:2px;
+    z-index: -1;
+    opacity: 2.5;
+    margin-bottom: 5px;
+    background: url('../real-estate/Images/seller-r.jpeg');
+
+}
+#Buyer-Home::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom:10px;
+    left:0px;
+    top:10px;
+    z-index: -1;
+    opacity: 2.5;
+    margin-bottom: 5px;
+    background: url('../real-estate/Images/Riverside.jpg');
+
+}
+
+
